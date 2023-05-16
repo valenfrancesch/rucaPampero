@@ -1,0 +1,183 @@
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    position: relative;
+    padding-bottom: 90px;
+}
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.titulo_pages {
+    text-align: center;
+}
+
+/*Estilo del index*/
+#section_inicio {
+    position: relative;
+}
+
+#titulo_imagen {
+    font-size: 3.5em;
+/*     position: absolute;
+    top: 140px; */
+    color: white;
+    text-shadow:  black 0 0 10px ;
+    text-align: center;
+}
+
+#portada_img {
+    width: 100%;
+    filter: blur(2.5px);
+}
+
+#seccion-novedades article div{
+    display: inline-block;
+    width: 500px;
+}
+
+.text_left {
+ text-align: right;
+}
+
+#seccion-novedades article img {
+    width: 400px;
+}
+
+#seccion-novedades article {
+    border: 3px solid rgb(66, 65, 65);
+    padding:20px;
+    padding-top: 0px;
+    margin:10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/*Estilo del header*/
+
+#escudo_ruca {
+    height: 50px;
+    margin: 15px 0px 0px 15px ;
+}
+
+header {
+    background-color: rgb(198, 196, 196);
+}
+
+header nav ul li {
+    display: inline-block;
+    background-color: rgb(213, 211, 211);
+    padding: 10px;
+    border:2px solid black;
+    border-radius: 10px;
+}
+
+header h1 , header nav, header div{
+    display: inline-block;
+    margin: 0px;
+}
+
+/* Estilo del footer*/
+footer {
+    background-color: rgb(198, 196, 196);
+    font-weight: bold;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+footer section ul, footer section p {
+    display: inline-block;
+}
+
+footer section {
+    display: inline-block;
+}
+.redes_sociales {
+    height: 25px;
+}
+
+/*Estilo contacto*/
+.campo_form {
+    display: block;
+    border: 2px solid rgb(155 10 10);
+    margin: 5px;
+    border-radius: 5px;
+}
+
+form {
+    display: inline-block;
+}
+
+#titulo_contacto {
+    color:rgb(155 10 10);
+    display: inline-block;
+}
+
+/* Estilo novedades */
+
+.img_novedades {
+    width: 400px;
+}
+
+.contenedor-card div{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.contenedor-card p {
+    width: 700px;
+}
+
+.contenedor-card {
+    background-color: rgb(255, 237, 237);
+    margin: 25px;
+    border-radius: 8px;
+    padding: 10px;
+    display: inline-block;
+}
+
+
+/* Estilo mandos */
+
+.card-feme {
+    background-color: rgb(255, 255, 167);
+}
+
+.card-mandos {
+    display:inline-block;
+    text-align: center;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 10px;
+    width: 225px;
+    height: 180px;
+}
+
+.card-mascu {
+    background-color: rgb(133, 255, 127);
+}
+
+.card-milis {
+    background-color: rgb(255, 165, 165);
+}
+
+.card-ruca {
+    background-color: rgb(184, 198, 198);
+}
+
+/* Estilo historia */
+
+.img_historia {
+    display: inline-block;
+    width: 350px;
+    margin:0px;
+}
+
+#fotos_historia {
+    margin-top: 50px;
+}
