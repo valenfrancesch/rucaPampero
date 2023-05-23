@@ -10,65 +10,123 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="./assets/iconos/favicon.png">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     </head>
     <body>
         <!--Cabecera con menu de opciones-->
-        <header>
-            <div>
-                <img id="escudo_ruca" src="./assets/imagenes/escudo_ruca.png" alt="Escudo de Ruca Pampero">
-                <h1>Ruca Pampero</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="./pages/historia.html">Historia</a></li>
-                    <li><a href="./pages/novedades.html">Novedades</a></li>
-                    <li><a href="./pages/mandos.html">Mandos</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+        <header id="header">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <div><a href="#">
+                    <img id="escudo_ruca" src="./assets/imagenes/logo_1.png" alt="Escudo de Ruca Pampero">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item header-li">
+                      <a class="nav-link" href="./pages/historia.html">Historia</a>
+                    </li>
+                    <li class="nav-item header-li">
+                      <a class="nav-link" href="./pages/novedades.html">Novedades</a>
+                    </li>
+                    <li class="nav-item header-li">
+                      <a class="nav-link" href="./pages/mandos.html">Mandos</a>
+                    </li>
+                    <li class="nav-item header-li">
+                      <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
         </header>
 
         <!--Parte principal de la página-->
         <main>
             <section id="section_incio">
-                <img id="portada_img" src="./assets/imagenes/portada_ruca.jpg" alt="Imagen del Ruca">
-                <h1 id="titulo_imagen">"Una Casa de Amigos"</h1>
+                <!-- <img id="portada_img" src="./assets/imagenes/portada_ruca.jpg" alt="Imagen del Ruca"> 
+                <h1 id="titulo_imagen">"Una Casa de Amigos"</h1>-->
+                <div class="contenedor-carousel">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicadores -->
+                        <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                    
+                        <!-- Slides -->
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="img-carrousel" src="./assets/imagenes/portada_ruca.jpg" alt="Imagen 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-carrousel" src="./assets/imagenes/portada_ruca2.JPG" alt="Imagen 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-carrousel" src="./assets/imagenes/portada_ruca3.jpg" alt="Imagen 3">
+                        </div>
+                        </div>
+                    
+                        <!-- Controles -->
+                        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                        </a>
+                    </div>
+                    <h1 class="carousel-title">Una Casa de Amigos</h1>
+                </div>
+
             </section>
-            <section id="seccion-novedades">
-                <article class="contenedor-card1">
-                    <img src="./assets/imagenes/historia1.jpg" alt="Foto antigua de niños festejando">
-                    <div>
+            <section class="seccion-novedades">
+                <article class="index-card card-style">
+                    <img class="img-card" src="./assets/imagenes/historia1.jpg" alt="Foto antigua de niños festejando">
+                    <div class="info-card">
                         <h3>¡El Ruca cumple 30 años!</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus praesentium harum doloremque? Odit sed hic nulla dolorum velit quos ullam sunt cumque quibusdam vitae, a, quaerat consectetur ratione molestiae? Consectetur, maiores illum? Nam, voluptates officia ab quidem commodi delectus, dignissimos veniam quos vitae corporis ad dicta est aspernatur ex rem magni eveniet expedita enim. Non expedita adipisci commodi fugiat aliquid dicta, tempore est ipsum asperiores labore laborum. Ullam dignissimos natus, tenetur sint obcaecati at vel eos. Ducimus cupiditate voluptatibus fugiat? Et vitae, aspernatur voluptatem, impedit consectetur, eos nesciunt perferendis id maiores cumque autem necessitatibus illo magnam molestiae voluptates consequuntur illum aut repellat deleniti laborum error non. Architecto, quam nisi. Recusandae quas ea perferendis fugiat impedit ipsum quos enim sint corporis est hic, sunt voluptates suscipit rerum unde minima ad nemo, exercitationem repudiandae temporibus iure. Quis laudantium non nisi neque.</p>
-                        <br><a href="./pages/novedades.html">Conoce la historia</a>
+                        <br><a href="./pages/historia.html">Conoce la historia</a>
                     </div>
                 </article>
-                <article class="contenedor-card2">
-                    
-                    <div>
-                        <h3 class="text_left">En Abril comenzarón las actividades</h3>
-                        <p class="text_left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus praesentium harum doloremque? Odit sed hic nulla dolorum velit quos ullam sunt cumque quibusdam vitae, a, quaerat consectetur ratione molestiae? Consectetur, maiores illum? Nam, voluptates officia ab quidem commodi delectus, dignissimos veniam quos vitae corporis ad dicta est aspernatur ex rem magni eveniet expedita enim. Non expedita adipisci commodi fugiat aliquid dicta, tempore est ipsum asperiores labore laborum. Ullam dignissimos natus, tenetur sint obcaecati at vel eos. Ducimus cupiditate voluptatibus fugiat? Et vitae, aspernatur voluptatem, impedit consectetur, eos nesciunt perferendis id maiores cumque autem necessitatibus illo magnam molestiae voluptates consequuntur illum aut repellat deleniti laborum error non. Architecto, quam nisi. Recusandae quas ea perferendis fugiat impedit ipsum quos enim sint corporis est hic, sunt voluptates suscipit rerum unde minima ad nemo, exercitationem repudiandae temporibus iure. Quis laudantium non nisi neque.</p>
-                        <br><a class="text_left" href="./pages/novedades.html">Ver más novedades</a>
+                <article class="index-card card-style" >
+                    <div class="info-card">
+                        <h3>En Abril comenzarón las actividades</h3>
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus praesentium harum doloremque? Odit sed hic nulla dolorum velit quos ullam sunt cumque quibusdam vitae, a, quaerat consectetur ratione molestiae? Consectetur, maiores illum? Nam, voluptates officia ab quidem commodi delectus, dignissimos veniam quos vitae corporis ad dicta est aspernatur ex rem magni eveniet expedita enim. Non expedita adipisci commodi fugiat aliquid dicta, tempore est ipsum asperiores labore laborum. Ullam dignissimos natus, tenetur sint obcaecati at vel eos. Ducimus cupiditate voluptatibus fugiat? Et vitae, aspernatur voluptatem, impedit consectetur, eos nesciunt perferendis id maiores cumque autem necessitatibus illo magnam molestiae voluptates consequuntur illum aut repellat deleniti laborum error non. Architecto, quam nisi. Recusandae quas ea perferendis fugiat impedit ipsum quos enim sint corporis est hic, sunt voluptates suscipit rerum unde minima ad nemo, exercitationem repudiandae temporibus iure. Quis laudantium non nisi neque.</p>
+                        <br><a href="./pages/novedades.html">Ver más novedades</a>
                     </div>
-                    <img src="./assets/imagenes/novedad1.jpg" alt="Foto del primier día de actividades">
+                    <img class="img-card" src="./assets/imagenes/novedad1.jpg" alt="Foto del primier día de actividades">
                 </article>
             </section>
         </main>
     
         <!--Pie de página-->
-        <footer>
-            <section>
+        <footer class="footer">
+            <section class="footer_section">
                 <p>Conocé más del movimiento FASTA <a href="https://www.fasta.org/">acá</a></p>
             </section>
-            <section id="section_redes">
-                <p>¡Seguinos en nuestras redes sociales!</p>
-                <ul>
-                    <li><a href="https://www.instagram.com/ruca_pampero/"><img class="redes_sociales" src="./assets/iconos/instagram.svg" alt="Icono instagram">@ruca_pampero</a></li>
-                    <li><a href="https://www.youtube.com/@PamperoTV"><img class="redes_sociales" src="./assets/iconos/youtube.svg" alt="Icono Youtube">Pampero Tv</a></li>
-                </ul>
+            <section class="footer_section">
+                <div id="section_redes">
+                    <p>¡Seguinos en nuestras redes sociales!</p>
+                    <ul>
+                        <li><a href="https://www.instagram.com/ruca_pampero/"><img class="redes_sociales" src="./assets/iconos/instagram.svg" alt="Icono instagram">@ruca_pampero</a></li>
+                        <li><a href="https://www.youtube.com/@PamperoTV"><img class="redes_sociales" src="./assets/iconos/youtube.svg" alt="Icono Youtube">Pampero Tv</a></li>
+                    </ul>
+                </div>
             </section>
         </footer>
+
+
+    <!-- Scripts bootstrap -->    
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script>
+          $(document).ready(function () {
+            $('.carousel').carousel();
+          });
+        </script>
     </body>
 </html>
