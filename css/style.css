@@ -1,361 +1,287 @@
-
-* {
-    font-family: 'Montserrat', sans-serif;
-    /* color:black; */
+#header {
+  background-color: rgb(198, 196, 196);
+  margin: 0px;
+  color: black;
+}
+#header nav {
+  margin-right: 20px;
+}
+#header nav #escudo_ruca {
+  height: 50px;
+}
+#header nav h1, #header nav div, #header nav nav {
+  display: inline-block;
+  margin: 0px;
+}
+#header nav .header-li {
+  background-color: rgb(213, 211, 211);
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-left: 8px;
+}
+#header nav .text_menu {
+  color: black !important;
 }
 
-body {
-    position: relative;
-    padding-bottom: 90px;
-    margin:0px;
-    min-height: 100vh;
-}
-ul {
-    list-style: none;
-    padding: 0px;
-}
-
-.titulo_pages {
-    text-align: center;
-    font-weight: 600;
-}
-
-.padding-titulo {
-    padding-top:40px;
-}
-
-.bold{
-    font-weight: 600;
-}
-
-/*ESTILO INDEX -----------------------------------------------------------------------------------*/
-
-/*Carrousel*/
-.carousel-inner{
-    height: 315px;
-    width: 100%;
-}
-
-.contenedor-carousel {
-    position: relative;
-    text-align: center;
-}
-
-.carousel-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-weight: 900;
-    font-size: 60px;
-    width: 100%;
-    text-shadow: 0px 0px 10px black;;
-}
-
-.img-carrousel{
-    filter: blur(2.5px);
-    /* width: 100%;
-    height: auto; */
-    overflow-y: hidden;
-}
-/*fin carrousel*/
-
-.seccion-novedades {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#section_inicio {
-    position: relative;
-}
-
-.index-card {
-    border: 3px solid rgb(66, 65, 65);
-    box-shadow: 0px 0px 10px rgb(167, 38, 38);
-}
-
-.card-style{
-    padding:20px;
-    padding-top: 0px;
-    margin:10px;
-    border-radius: 10px;
-    display: grid;
-    grid-template-areas:
-        ". b"
-        "a b"
-        ". b";
-}
-
-.img-card {
-    width: 400px;
-    grid-area: a;
-}
-
-.info-card {
-    display: inline-block;
-    width: 500px;
-    margin: 15px 15px 0px 15px;
-    grid-area: b;
-}
-
-.info-card h2{
-    font-size:1.5rem;
-}
-
-/* --------------------------------------------------------------------------------------------- */
-
-/*Estilo del header -----------------------------------------------------------------------------*/
-
-#header{
-    background-color: rgb(198, 196, 196);   
-    margin:0px; 
-    color:black;
-}
-
-#escudo_ruca {
-    height: 50px;
-    
-}
-
-.header-li {
-    /* display: inline-block; */
-    background-color: rgb(213, 211, 211);
-    padding: 5px;
-    border:2px solid black;
-    border-radius: 10px;
-    margin-left: 8px; 
-}
-
-header h1 , header div, header nav{
-    display: inline-block;
-    margin: 0px;
-}
-
-header nav {
-    margin-right: 20px;
-}
-
-.tres_rayas{
-    background-color: aqua;
-}
-
-.text_menu{
-    color:black !important;
-}
-
-/* --------------------------------------------------------------------------------------------------- */
-
-/* Estilo del footer -----------------------------------------------------------------------------------*/
 .footer {
-    background-color: rgb(198, 196, 196);
-    font-weight: bold;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left:15px;
+  background-color: rgb(198, 196, 196);
+  font-weight: bold;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
 }
-
-footer section ul, footer section p {
-    display: inline-block;
+.footer .footer_section {
+  display: inline-block;
+  margin-left: 10px;
 }
-
-.footer_section{
-    display: inline-block;
-    margin-left:10px;
+.footer .footer_section #section_redes {
+  display: flex;
+  align-items: center;
 }
-.redes_sociales {
-    height: 25px;
+.footer .footer_section ul, .footer .footer_section p {
+  display: inline-block;
 }
-
- footer section ul {
-    margin: 15px 15px;
-} 
-
-#section_redes{
-    display:flex;
-    align-items: center;
+.footer .footer_section ul {
+  margin: 15px 15px;
 }
-
-#section_redes ul li a{
-    display:flex;
-    flex-wrap: nowrap;
+.footer .footer_section ul li a {
+  display: flex;
+  flex-wrap: nowrap;
 }
-
-/* ---------------------------------------------------------------------------------------------- */
-
-/*Estilo contacto*/
-#titulo_contacto {
-    color:rgb(155 10 10);
-    text-align: center; 
-    font-size: 40px;
-    width: 700px;
-}
-
-#contacto{
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-form .campo_form {
-    border: 2px solid rgb(155 10 10);
-    border-radius: 5px;
-    width: 400px;
-}
-
-form .boton_enviar {
-    background-color: rgb(254, 44, 44);
-    border-color: black;
-}
-form {
-    margin: 20px;
-    margin-right:40px;
-    align-self: center;
-}
-/* ------------------------------------------------------------------------------------------- */
-
-/* Estilo novedades ----------------------------------------------------------------------------*/
-
-.contenedor-card {
-    background-color: rgb(255, 237, 237);
-    margin: 25px;
-    border-radius: 8px;
-    padding: 10px;
-}
-
-/* -------------------------------------------------------------------------------------------- */
-
-/* Estilo mandos */
-
-.card-feme {
-    background-color: rgb(255, 255, 167);
-}
-
-.card-mandos {
-    text-align: center;
-    padding: 30px;
-    margin: 20px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.card-mascu {
-    background-color: rgb(133, 255, 127);
-}
-
-.card-milis {
-    background-color: rgb(255, 165, 165);
-}
-
-.card-ruca {
-    background-color: rgb(184, 198, 198);
-}
-
-.contenedor-mandos {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.card-mandos h2{
-    font-size: 1.5rem;
-}
-
-/* -------------------------------------------------------------------------------------------------- */
-
-/* Estilo historia */
-
-.img_historia {
-    display: inline-block;
-    width: 350px;
-    margin:0px;
-}
-
-#fotos_historia {
-    margin-top: 50px;
-
-}
-
-.imagenes_historia{
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.footer .footer_section .redes_sociales {
+  height: 25px;
 }
 
 .main_historia {
-    margin: 0px 15px;
+  margin: 0px 15px;
+}
+.main_historia #fotos_historia {
+  margin-top: 50px;
+}
+.main_historia #fotos_historia .imagenes_historia {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.main_historia #fotos_historia .imagenes_historia .img_historia {
+  display: inline-block;
+  width: 350px;
+  margin: 0px;
 }
 
-/* ---------------------------------------------------------------------------------------------------- */
+.contenedor-mandos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.contenedor-mandos .card-mandos {
+  text-align: center;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contenedor-mandos .card-mandos h2 {
+  font-size: 1.5rem;
+}
+.contenedor-mandos .card-feme {
+  background-color: rgb(255, 255, 167);
+}
+.contenedor-mandos .card-mascu {
+  background-color: rgb(133, 255, 127);
+}
+.contenedor-mandos .card-milis {
+  background-color: rgb(255, 165, 165);
+}
+.contenedor-mandos .card-ruca {
+  background-color: rgb(184, 198, 198);
+}
+
+#contacto {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#contacto #titulo_contacto {
+  color: rgb(155, 10, 10);
+  text-align: center;
+  font-size: 40px;
+  width: 700px;
+}
+
+form {
+  margin: 20px;
+  margin-right: 40px;
+  align-self: center;
+}
+form .boton_enviar {
+  background-color: rgb(254, 44, 44);
+  border-color: black;
+}
+form .campo_form {
+  border: 2px solid rgb(155, 10, 10);
+  border-radius: 5px;
+  width: 400px;
+}
+
+.card-style {
+  padding: 20px;
+  padding-top: 0px;
+  margin: 10px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-areas: ". b" "a b" ". b";
+}
+.card-style .img-card {
+  width: 400px;
+  grid-area: a;
+}
+.card-style .info-card {
+  display: inline-block;
+  width: 500px;
+  margin: 15px 15px 0px 15px;
+  grid-area: b;
+}
+.card-style .info-card h2 {
+  font-size: 1.5rem;
+}
+
+.contenedor-carousel {
+  position: relative;
+  text-align: center;
+}
+.contenedor-carousel .carousel-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 900;
+  font-size: 60px;
+  width: 100%;
+  text-shadow: 0px 0px 10px black;
+}
+.contenedor-carousel .carousel-inner {
+  height: 315px;
+  width: 100%;
+}
+.contenedor-carousel .carousel-inner .img-carrousel {
+  filter: blur(2.5px);
+  overflow-y: hidden;
+}
+
+/* Estilos generales */
+* {
+  font-family: "Montserrat", sans-serif;
+  /* color:black; */
+}
+
+body {
+  position: relative;
+  padding-bottom: 90px;
+  margin: 0px;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.titulo_pages {
+  text-align: center;
+  font-weight: 600;
+}
+
+.padding-titulo {
+  padding-top: 40px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+/*Estilo index*/
+#section_inicio {
+  position: relative;
+}
+
+.seccion-novedades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.index-card {
+  border: 3px solid rgb(66, 65, 65);
+  box-shadow: 0px 0px 10px rgb(167, 38, 38);
+}
+
+/* Estilo novedades*/
+.contenedor-card {
+  background-color: rgb(255, 237, 237);
+  margin: 25px;
+  border-radius: 8px;
+  padding: 10px;
+}
 
 /* Responsive tablet horizontal */
-@media (max-width: 1024px){
-    .img-card{
-        width: 300px;
-    }
-    .info-card{
-        width: 400px;
-    }
-
-    body{
-        padding-bottom: 160px;
-    }
-
-    form .campo_form{
-        width: 400px;
-    }
+@media (max-width: 1024px) {
+  .img-card {
+    width: 300px;
+  }
+  .info-card {
+    width: 400px;
+  }
+  body {
+    padding-bottom: 160px;
+  }
+  form .campo_form {
+    width: 400px;
+  }
 }
-
 /* Responsive tablet vertical */
-@media (max-width: 768px){
-
-    .card-style{
-        grid-template-areas:
-        ". a ."
-        "b b b";
-    }
-
-    .img-card{
-        margin-top: 15px;
-        width: 400px;
-    }
-
-    .info-card{
-        width: 400px;
-    }
-
-    .carousel-title {
-        font-size: 40px;
-    }
-
-    form .campo_form{
-        width: 300px;
-    }
-
-    footer{
-        font-size: 10px;
-    }
-    .redes_sociales {
-        height: 15px;
-    }
-    
+@media (max-width: 768px) {
+  .card-style {
+    grid-template-areas: ". a ." "b b b";
+  }
+  .img-card {
+    margin-top: 15px;
+    width: 400px;
+  }
+  .info-card {
+    width: 400px;
+  }
+  .carousel-title {
+    font-size: 40px;
+  }
+  form .campo_form {
+    width: 300px;
+  }
+  footer {
+    font-size: 10px;
+  }
+  .redes_sociales {
+    height: 15px;
+  }
+}
+/* Responsive celu acostado */
+@media (max-width: 480px) {
+  .img-card {
+    width: 300px;
+  }
+  .info-card {
+    width: 280px;
+  }
 }
 
-/* Responsive celu acostado  ---------->falta */
-@media (max-width: 480px){
-    .img-card{
-        width: 300px;
-    }
-    .info-card{
-        width: 280px;
-    }
-}
+/*# sourceMappingURL=style.css.map */

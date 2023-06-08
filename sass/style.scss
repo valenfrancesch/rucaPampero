@@ -1,0 +1,124 @@
+@import "header.scss";
+@import "footer.scss";
+@import "historia.scss";
+@import "mandos.scss";
+@import "contacto.scss";
+@import "cards.scss";
+@import "carrousel.scss";
+
+
+/* Estilos generales */
+* {
+    font-family: 'Montserrat', sans-serif;
+    /* color:black; */
+}
+
+body {
+    position: relative;
+    padding-bottom: 90px;
+    margin:0px;
+    min-height: 100vh;
+}
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.titulo_pages {
+    text-align: center;
+    font-weight: 600;
+}
+
+.padding-titulo {
+    padding-top:40px;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+/*Estilo index*/
+#section_inicio {
+    position: relative;
+}
+
+.seccion-novedades {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.index-card {
+    border: 3px solid rgb(66, 65, 65);
+    box-shadow: 0px 0px 10px rgb(167, 38, 38);
+}
+
+/* Estilo novedades*/
+.contenedor-card {
+    background-color: rgb(255, 237, 237);
+    margin: 25px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Responsive tablet horizontal */
+@media (max-width: 1024px){
+    .img-card{
+        width: 300px;
+    }
+    .info-card{
+        width: 400px;
+    }
+
+    body{
+        padding-bottom: 160px;
+    }
+
+    form .campo_form{
+        width: 400px;
+    }
+}
+
+/* Responsive tablet vertical */
+@media (max-width: 768px){
+
+    .card-style{
+        grid-template-areas:
+        ". a ."
+        "b b b";
+    }
+
+    .img-card{
+        margin-top: 15px;
+        width: 400px;
+    }
+
+    .info-card{
+        width: 400px;
+    }
+
+    .carousel-title {
+        font-size: 40px;
+    }
+
+    form .campo_form{
+        width: 300px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+    .redes_sociales {
+        height: 15px;
+    }
+    
+}
+
+/* Responsive celu acostado */
+@media (max-width: 480px){
+    .img-card{
+        width: 300px;
+    }
+    .info-card{
+        width: 280px;
+    }
+}

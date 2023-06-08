@@ -1,0 +1,31 @@
+#contacto{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+    #titulo_contacto {
+        color:rgb(155 10 10);
+        text-align: center; 
+        font-size: 40px;
+        width: 700px;
+    }
+}
+
+form {
+    margin: 20px;
+    margin-right:40px;
+    align-self: center;
+
+    .boton_enviar {
+        background-color: rgb(254, 44, 44);
+        border-color: black;
+    }
+
+    .campo_form {
+    border: 2px solid rgb(155 10 10);
+    border-radius: 5px;
+    width: 400px;
+    }
+
+}

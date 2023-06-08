@@ -1,0 +1,37 @@
+.footer {
+    background-color: rgb(198, 196, 196);
+    font-weight: bold;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:15px;
+
+    .footer_section{
+        display: inline-block;
+        margin-left:10px;
+
+        #section_redes{
+            display:flex;
+            align-items: center;
+        }
+
+        ul, p {
+            display: inline-block;
+        }
+
+        ul {
+            margin: 15px 15px;
+
+            li a{
+                display:flex;
+                flex-wrap: nowrap;
+            }
+        } 
+        .redes_sociales {
+            height: 25px;
+        }
+    }
+}

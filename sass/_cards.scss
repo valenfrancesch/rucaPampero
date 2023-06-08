@@ -1,0 +1,27 @@
+.card-style{
+    padding:20px;
+    padding-top: 0px;
+    margin:10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas:
+        ". b"
+        "a b"
+        ". b";
+
+    .img-card {
+        width: 400px;
+        grid-area: a;
+    }
+
+    .info-card {
+        display: inline-block;
+        width: 500px;
+        margin: 15px 15px 0px 15px;
+        grid-area: b;
+
+        h2{
+            font-size:1.5rem;
+        }
+    }
+}
