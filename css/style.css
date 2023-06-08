@@ -60,16 +60,16 @@
 .main_historia {
   margin: 0px 15px;
 }
-.main_historia #fotos_historia {
+
+#fotos_historia {
   margin-top: 50px;
 }
-.main_historia #fotos_historia .imagenes_historia {
+#fotos_historia .imagenes_historia {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.main_historia #fotos_historia .imagenes_historia .img_historia {
-  display: inline-block;
+#fotos_historia .imagenes_historia .img_historia {
   width: 350px;
   margin: 0px;
 }

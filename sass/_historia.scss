@@ -1,21 +1,19 @@
 
 .main_historia {
     margin: 0px 15px;
+}
 
-    #fotos_historia {
-        margin-top: 50px;
+#fotos_historia {
+    margin-top: 50px;
 
-        .imagenes_historia{
-            display:flex;
-            justify-content: center;
-            flex-wrap: wrap;
+    .imagenes_historia{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
 
-            .img_historia {
-                display: inline-block;
-                width: 350px;
-                margin:0px;
-            }
+        .img_historia {
+            width: 350px;
+            margin:0px;
         }
     }
-
 }
