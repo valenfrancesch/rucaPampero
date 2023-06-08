@@ -6,12 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contacto</title>
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="shortcut icon" href="../assets/iconos/favicon.png">
+        <!-- Link fuentes tipografía -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="../assets/iconos/favicon.png">
+        
+        <!-- Link bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    
     </head>
     <body>
         <!--Cabecera con menu de opciones + bootstrap-->
@@ -27,31 +29,50 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                   <ul class="navbar-nav ml-auto">
                     <li class="nav-item header-li">
-                      <a class="nav-link" href="../pages/historia.html">Historia</a>
+                      <a class="text_menu nav-link" href="../pages/historia.html">Historia</a>
                     </li>
                     <li class="nav-item header-li">
-                      <a class="nav-link" href="../pages/novedades.html">Novedades</a>
+                      <a class="text_menu nav-link" href="../pages/novedades.html">Novedades</a>
                     </li>
                     <li class="nav-item header-li">
-                      <a class="nav-link" href="../pages/mandos.html">Mandos</a>
+                      <a class="text_menu nav-link" href="../pages/mandos.html">Mandos</a>
                     </li>
                     <li class="nav-item header-li">
-                      <a class="nav-link" href="#">Contacto</a>
+                      <a class="text_menu nav-link" href="#">Contacto</a>
                     </li>
                   </ul>
                 </div>
               </nav>
         </header>
 
+        <!-- Main de la página -->
+
         <main id="contacto">
-            <h3 id="titulo_contacto">Dejanos tu pregunta, inquietud o comentario</h3>
-            <form>
+            <h1 class="padding-titulo" id="titulo_contacto">Dejanos tu pregunta, inquietud o comentario</h1>
+<!--             <form>
                 <input class="campo_form" type="text" name="nombre_apellido" placeholder="Nombre y Apellido">
                 <input class="campo_form" type="text" name="email" placeholder="Correo Electrónico">
                 <label>Fecha de Nacimiento</label>
                 <input class="campo_form" type="date" name="fecha_nacimiento">
                 <textarea class="campo_form" name="consulta" cols="30" rows="10" placeholder="Escriba aquí su consulta"></textarea>
-            </form>
+            </form> -->
+
+            <!-- Bootstrap form -->
+            <form>
+              <div class="form-group">
+                <label>Nombre y Apellido</label>
+                <input type="text" class=" form-control campo_form ">
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" class=" form-control campo_form " placeholder="nombre@ejemplo.com">
+              </div>
+              <div class="form-group">
+                <label>Escriba aquí su consulta</label>
+                <textarea class=" form-control campo_form "  rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary boton_enviar">Submit</button>
+          </form>
         </main>
 
         <!--Pie de página-->
@@ -69,5 +90,8 @@
                 </div>
             </section>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </body>
 </html>

@@ -1,12 +1,14 @@
 
 * {
     font-family: 'Montserrat', sans-serif;
+    /* color:black; */
 }
 
 body {
     position: relative;
     padding-bottom: 90px;
     margin:0px;
+    min-height: 100vh;
 }
 ul {
     list-style: none;
@@ -15,6 +17,14 @@ ul {
 
 .titulo_pages {
     text-align: center;
+    font-weight: 600;
+}
+
+.padding-titulo {
+    padding-top:40px;
+}
+
+.bold{
     font-weight: 600;
 }
 
@@ -90,6 +100,10 @@ ul {
     grid-area: b;
 }
 
+.info-card h2{
+    font-size:1.5rem;
+}
+
 /* --------------------------------------------------------------------------------------------- */
 
 /*Estilo del header -----------------------------------------------------------------------------*/
@@ -97,11 +111,12 @@ ul {
 #header{
     background-color: rgb(198, 196, 196);   
     margin:0px; 
+    color:black;
 }
 
 #escudo_ruca {
     height: 50px;
-    margin: 15px 0px 0px 15px ;
+    
 }
 
 .header-li {
@@ -126,6 +141,10 @@ header nav {
     background-color: aqua;
 }
 
+.text_menu{
+    color:black !important;
+}
+
 /* --------------------------------------------------------------------------------------------------- */
 
 /* Estilo del footer -----------------------------------------------------------------------------------*/
@@ -147,54 +166,58 @@ footer section ul, footer section p {
 
 .footer_section{
     display: inline-block;
+    margin-left:10px;
 }
 .redes_sociales {
     height: 25px;
 }
 
-footer section ul {
+ footer section ul {
     margin: 15px 15px;
-}
+} 
 
 #section_redes{
     display:flex;
     align-items: center;
 }
 
+#section_redes ul li a{
+    display:flex;
+    flex-wrap: nowrap;
+}
+
 /* ---------------------------------------------------------------------------------------------- */
 
 /*Estilo contacto*/
-#contacto {
-    display: grid;
-    grid-template-areas: 
-    ". . b b"
-    "a a b b"
-    ". . b b"
-    ;
-}
-
-.campo_form {
-    display: block;
-    border: 2px solid rgb(155 10 10);
-    margin: 5px;
-    border-radius: 5px;
-}
-
-form {
-    display: inline-block;
-    grid-area: b;
-    margin: 50px 0px;
-}
-
 #titulo_contacto {
     color:rgb(155 10 10);
-    display: inline-block;
-    grid-area: a;
-    text-align: center;
+    text-align: center; 
+    font-size: 40px;
+    width: 700px;
 }
 
+#contacto{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
+form .campo_form {
+    border: 2px solid rgb(155 10 10);
+    border-radius: 5px;
+    width: 400px;
+}
 
+form .boton_enviar {
+    background-color: rgb(254, 44, 44);
+    border-color: black;
+}
+form {
+    margin: 20px;
+    margin-right:40px;
+    align-self: center;
+}
 /* ------------------------------------------------------------------------------------------- */
 
 /* Estilo novedades ----------------------------------------------------------------------------*/
@@ -215,13 +238,14 @@ form {
 }
 
 .card-mandos {
-    display:inline-block;
     text-align: center;
-    padding: 50px;
-    margin: 30px;
+    padding: 30px;
+    margin: 20px;
     border-radius: 10px;
-    width: auto;
-    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .card-mascu {
@@ -240,6 +264,10 @@ form {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+.card-mandos h2{
+    font-size: 1.5rem;
 }
 
 /* -------------------------------------------------------------------------------------------------- */
@@ -281,10 +309,15 @@ form {
     body{
         padding-bottom: 160px;
     }
+
+    form .campo_form{
+        width: 400px;
+    }
 }
 
 /* Responsive tablet vertical */
 @media (max-width: 768px){
+
     .card-style{
         grid-template-areas:
         ". a ."
@@ -304,6 +337,17 @@ form {
         font-size: 40px;
     }
 
+    form .campo_form{
+        width: 300px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+    .redes_sociales {
+        height: 15px;
+    }
+    
 }
 
 /* Responsive celu acostado  ---------->falta */
