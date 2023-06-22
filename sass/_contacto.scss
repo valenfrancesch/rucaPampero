@@ -1,8 +1,14 @@
 #contacto{
+
+    height: 78vh;
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+
+    @media (max-width: 768px) {
+            height: auto;
+    }
 
     #titulo_contacto {
         color:rgb(155 10 10);
@@ -29,3 +35,4 @@ form {
     }
 
 }
+

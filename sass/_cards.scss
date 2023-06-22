@@ -9,19 +9,56 @@
         "a b"
         ". b";
 
-    .img-card {
+}
+
+.img-card {
+    width: 400px;
+    grid-area: a;
+}
+
+.info-card {
+    display: inline-block;
+    width: 500px;
+    margin: 15px 15px 0px 15px;
+    grid-area: b;
+
+    h2{
+        font-size:1.5rem;
+    }
+}
+
+@media (max-width: 1024px){
+    .img-card{
+        width: 300px;
+    }
+    .info-card{
         width: 400px;
-        grid-area: a;
+    }
+}
+
+@media (max-width: 768px){
+
+    .card-style{
+        grid-template-areas:
+        ". a ."
+        "b b b";
     }
 
-    .info-card {
-        display: inline-block;
-        width: 500px;
-        margin: 15px 15px 0px 15px;
-        grid-area: b;
+    .img-card{
+        margin-top: 15px;
+        width: 400px;
+    }
 
-        h2{
-            font-size:1.5rem;
-        }
+    .info-card{
+        width: 400px;
+    }
+}
+
+@media (max-width: 480px){
+    .img-card{
+        width: 280px;
+    }
+    .info-card{
+        width: 280px;
     }
 }

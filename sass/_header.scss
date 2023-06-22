@@ -3,17 +3,13 @@
     background-color: rgb(198, 196, 196);   
     margin:0px; 
     color:black;
+    font-weight: 600;
 
     nav {
         margin-right: 20px;
 
         #escudo_ruca {
             height: 50px;
-        }
-
-        h1 , div, nav{
-            display: inline-block;
-            margin: 0px;
         }
 
         .header-li {
@@ -24,8 +20,13 @@
             margin-left: 8px; 
         }
 
-        .text_menu{
-            color:black !important;
+        .header-li:hover {
+            background-color: aliceblue;
         }
+
+        .text_menu{
+            color:black;
+        }
+
     }
 }
