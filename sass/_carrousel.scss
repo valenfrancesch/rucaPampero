@@ -17,6 +17,9 @@
             width: 80%;
         }
     }
+
+
+
     .carousel-inner{
         height: 315px;
         width: 100%;
@@ -30,9 +33,17 @@
             @media (max-width: 1024px){
                 height: 100%;
                 width: auto;
-                object-fit: contain;
-                transform-origin: center;
+            }
+            @media (max-width: 780px){
+                margin-left:-450px;
             }
         }
+
+        .carousel-item {
+            object-position: center center;
+        }
     }
+
+ 
+
 }
